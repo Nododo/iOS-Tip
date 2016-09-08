@@ -34,7 +34,7 @@
  **/
 
 /*
- 1.NSURLSession最直接的改进在于可以配置每个session的缓存，协议，cookie以及证书策略，甚至跨程序共享这些信息，这将允许程序和网络框架之间相互独立，不会发生干扰。每个NSURLSession 对象都由一个NSURLSessionConfiguration对象来进行初始化，后者制定了策略以及用于增强移动设备性能的新功能。
+ 1.NSURLSession最直接的改进在于可以配置每个session的缓存，协议，cookie以及证书策略，甚至跨程序共享这些信息，这将允许程序和网络框架之间相互独立，不会发生干扰。每个NSURLSession 对象都由一个NSURLSessionConfiguration对象来进行初始化，提升了性能。
  2.NSURLSession第二大区别：session Task。它负责处理数据加载以及文件和数据在客户端与服务端之间下载和上传。NSURLSession与NSURLConnection都是负责数据加载，不同之处在于所有的task共享其创造者NSURLSession 公共委托者；
  **/
 
