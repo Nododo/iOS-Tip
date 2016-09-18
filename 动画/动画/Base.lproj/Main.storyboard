@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9P-dv-3gP">
+                                <rect key="frame" x="120" y="120" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.11209484810000001" blue="0.063067346189999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Yn-Fu-F20"/>
+                                    <constraint firstAttribute="height" constant="100" id="5ZN-Lx-YOd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFu-j2-Agu">
+                                <rect key="frame" x="120" y="272" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.56862745100000001" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iFu-j2-Agu" firstAttribute="height" secondItem="F9P-dv-3gP" secondAttribute="height" id="03t-J3-XSu"/>
+                            <constraint firstItem="iFu-j2-Agu" firstAttribute="top" secondItem="F9P-dv-3gP" secondAttribute="bottom" constant="52" id="QNn-Mf-sza"/>
+                            <constraint firstItem="iFu-j2-Agu" firstAttribute="width" secondItem="F9P-dv-3gP" secondAttribute="width" id="UVY-zL-neb"/>
+                            <constraint firstItem="iFu-j2-Agu" firstAttribute="leading" secondItem="F9P-dv-3gP" secondAttribute="leading" id="Xo3-up-ywM"/>
+                            <constraint firstItem="iFu-j2-Agu" firstAttribute="centerX" secondItem="F9P-dv-3gP" secondAttribute="centerX" id="kR2-VC-hON"/>
+                            <constraint firstItem="F9P-dv-3gP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="xJo-uS-54L"/>
+                            <constraint firstItem="F9P-dv-3gP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="xYo-ou-ZWS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="iFu-j2-Agu" id="ggO-fn-iLq"/>
+                        <outlet property="redView" destination="F9P-dv-3gP" id="QXD-2D-2rN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
